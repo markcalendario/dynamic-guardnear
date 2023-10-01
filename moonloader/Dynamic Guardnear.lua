@@ -1,6 +1,6 @@
 script_name("Dynamic Guardnear")
 script_author("akacross, Maku Kenesu")
-script_version("0.2.2")
+script_version("0.3.2")
 
 require"lib.moonloader"
 require"lib.sampfuncs"
@@ -228,6 +228,6 @@ function cmd_guardnear_cooldown(params)
 		do return end
 	end
 
-	cooldown = cd * 1000
+	cooldown = cd * 1000 + 1000
 	sampAddChatMessage(string.format("{FFFFFF}Guard Near: You will now start vesting players with %d seconds of cooldown.", cd))
 end
