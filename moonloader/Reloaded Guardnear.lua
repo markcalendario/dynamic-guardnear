@@ -1,4 +1,4 @@
-script_name("Guardnear Reloaded")
+script_name("Dynamic Guardnear")
 script_author("akacross, Maku Kenesu")
 script_version("0.2.2")
 
@@ -9,7 +9,7 @@ function main()
 	if not isSampLoaded() or not isSampfuncsLoaded() then return end
 	while not isSampAvailable() do wait(100) end
 	
-	sampAddChatMessage("{FFFFFF}Guard Near Loaded. Modified by Maku Kenesu. [/guardnear.cmds]")
+	sampAddChatMessage("{FFFFFF}Dynamic Guard Near by Maku Kenesu. [/guardnear.cmds]")
 
 	sampRegisterChatCommand("guardnear", cmd_guardnear)
 	sampRegisterChatCommand("guardnear.cmds", cmd_guardnear_cmds)
