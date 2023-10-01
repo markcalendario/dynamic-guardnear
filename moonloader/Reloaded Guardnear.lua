@@ -1,6 +1,6 @@
 script_name("Guardnear Reloaded")
 script_author("akacross, Maku Kenesu")
-script_version("0.2.1")
+script_version("0.2.2")
 
 require"lib.moonloader"
 require"lib.sampfuncs"
@@ -182,7 +182,7 @@ function cmd_ignore_list(params)
 	for i, v in ipairs(ignorelist) do
 		sampAddChatMessage("{FFFFFF}ID: %d", v)
 	end
-	sampAddChatMessage("{FFFFFF}===================END=====================")
+	sampAddChatMessage("{FFFFFF}============================================")
 end
 
 function cmd_vest_level(params)
@@ -211,7 +211,7 @@ function cmd_guardnear_cmds()
 	sampAddChatMessage("{00D6F7}/vest.level [armor] {FFFFFF} - Limits the highest armor level of players you will offer the vest.")
 	sampAddChatMessage("{00D6F7}/armorcheck {FFFFFF} - Toggles armor checking on or off.")
 	sampAddChatMessage("{00D6F7}/ignore.add [id] {FFFFFF} - Add player on the ignore list.")
-	sampAddChatMessage("{00D6F7}/ignore.add [id] {FFFFFF} - Remove player from the ignore list.")
+	sampAddChatMessage("{00D6F7}/ignore.remove [id] {FFFFFF} - Remove player from the ignore list.")
 	sampAddChatMessage("{00D6F7}/ignore.list {FFFFFF} - List all players from the ignore list.")
 end
 
